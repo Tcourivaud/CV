@@ -16,42 +16,42 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      font-size: 10.5pt; line-height: 1.42; color: var(--ink); background: var(--bg);
+      font-size: 9.4pt; line-height: 1.28; color: var(--ink); background: var(--bg);
       -webkit-font-smoothing: antialiased;
     }
     .page {
       max-width: 210mm; min-height: 297mm;
-      margin: 0 auto; padding: 14mm 16mm 14mm 22mm;
+      margin: 0 auto; padding: 6mm 12mm 6mm 15mm;
       position: relative;
     }
     .page::before {
       content: ""; position: absolute; left: 0; top: 0; bottom: 0;
       width: 6mm; background: var(--accent);
     }
-    header { margin-bottom: 6mm; }
-    .name { font-size: 22pt; font-weight: 700; letter-spacing: -0.02em; }
-    .role { font-size: 12pt; font-weight: 500; color: var(--muted); margin-top: 2px; }
-    .contact { margin-top: 6px; font-size: 9.5pt; color: var(--muted); display: flex; flex-wrap: wrap; gap: 12px; }
+    header { margin-bottom: 4mm; }
+    .name { font-size: 20pt; font-weight: 700; letter-spacing: -0.02em; }
+    .role { font-size: 11pt; font-weight: 500; color: var(--muted); margin-top: 2px; }
+    .contact { margin-top: 4px; font-size: 9pt; color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px; }
     .contact a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
-    section { margin-top: 5mm; }
+    section { margin-top: 3mm; }
     h2 {
-      font-size: 10pt; text-transform: uppercase; letter-spacing: 0.12em;
+      font-size: 9.5pt; text-transform: uppercase; letter-spacing: 0.12em;
       font-weight: 600; color: var(--accent);
-      border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin-bottom: 3mm;
+      border-bottom: 1px solid var(--rule); padding-bottom: 1px; margin-bottom: 1.8mm;
     }
-    .summary { font-size: 10.5pt; }
+    .summary { font-size: 9.8pt; }
     .skills-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 6mm;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 6mm;
     }
-    .skills-grid dt { font-weight: 600; font-size: 9.5pt; }
-    .skills-grid dd { font-size: 10pt; color: var(--muted); margin-bottom: 1mm; }
-    .job { margin-bottom: 4mm; break-inside: avoid; }
+    .skills-grid dt { font-weight: 600; font-size: 9pt; }
+    .skills-grid dd { font-size: 9.5pt; color: var(--muted); margin-bottom: 0.8mm; }
+    .job { margin-bottom: 2.8mm; break-inside: avoid; }
     .job-head { display: flex; justify-content: space-between; align-items: baseline; }
     .job-title { font-weight: 600; }
-    .job-meta { font-size: 9.5pt; color: var(--muted); }
-    .job ul { margin-top: 2px; padding-left: 14px; }
-    .job li { margin-bottom: 1.5mm; font-size: 10pt; }
-    .cert-list, .lang-list { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8mm; font-size: 10pt; }
+    .job-meta { font-size: 9pt; color: var(--muted); }
+    .job ul { margin-top: 1px; padding-left: 13px; }
+    .job li { margin-bottom: 0.8mm; font-size: 9.3pt; }
+    .cert-list, .lang-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm 8mm; font-size: 9.5pt; }
     code, .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 9pt; }
 
     @page { size: A4; margin: 0; }
@@ -78,7 +78,7 @@
 
   <section>
     <h2>Profil</h2>
-    <p class="summary">Tech Lead SOC chez Thales depuis 2024, 3 ans en supervision et ingénierie SIEM en environnement défense. Expert Splunk full stack (Indexer Cluster, Search Head Cluster, ES, CIM) ; conception de règles de détection alignées MITRE ATT&amp;CK et orchestration Ansible/AWX. Splunk Power User (SPLK-1002) ; Enterprise Admin (SPLK-1003). Anglais C1.</p>
+    <p class="summary">Tech Lead SOC – Thales (2023) 3 ans en supervision et ingénierie SIEM, environnement défense. Splunk full stack. SPLK-1002 · SPLK-1003 ·</p>
   </section>
 
   <section>
@@ -86,9 +86,9 @@
     <dl class="skills-grid">
       <dt>SIEM / Splunk</dt><dd>Splunk Enterprise (HF, UF, Indexers, Search Heads, Cluster Manager, Deployment Server, License Manager), SPL, CIM, ES, ITSI, dashboards, REST API, HEC</dd>
       <dt>Détection &amp; threat intel</dt><dd>MITRE ATT&amp;CK, détection engineering, use case engineering, tuning de règles, MISP, Cybels (sonde réseau)</dd>
-      <dt>Endpoint &amp; AV</dt><dd>Trend Micro Deep Security 20, EDR, Apex One, Apex Central</dd>
+      <dt>Endpoint &amp; AV</dt><dd>Trend Micro Deep Security, EDR, Apex One, Apex Central</dd>
       <dt>Infra &amp; automatisation</dt><dd>Linux, PowerShell, Python, Ansible (AWX), VMware</dd>
-      <dt>Réseau &amp; crypto</dt><dd>Arista eAPI, IPsec/strongSwan, cryptographie, Sonde Cybels</dd>
+      <dt>Réseau &amp; crypto</dt><dd>Arista eAPI, IPsec/strongSwan, cryptographie</dd>
       <dt>Frameworks</dt><dd>MITRE ATT&amp;CK, NIST CSF, ISO 27001, ANSSI PDIS/PRIS</dd>
     </dl>
   </section>
@@ -101,10 +101,10 @@
         <span class="job-meta">Sept. 2024 — présent · [Paris]</span>
       </div>
       <ul>
-        <li>Architecturé et maintenir un cluster Splunk Enterprise multi-sites (3 indexeurs / 2 Search Heads) ingérant ~400 Go/jour depuis 450 sources de données pour les opérations SOC 24/7.</li>
-        <li>Automatisé le déploiement des forwarders Splunk via Ansible/AWX sur les hôtes, réduisant le temps d'intégration.</li>
-        <li>Piloté les montées de versions majeures de Splunk Enterprise (9.4 → 10.2) sur l'ensemble du cluster en environnement de production, incluant la planification, les tests de non-régression et la mise à jour des apps.</li>
-        <li>Accompagné 2 analystes N1 sur le SPL, la création de dashboards et la normalisation CIM ; rédaction de runbooks SOC internes.</li>
+        <li>Architecture et maintien d'un cluster Splunk Enterprise multi-sites (3 indexeurs / 2 Search Heads) ingérant ~400 Go/jour depuis 450 sources de données pour les opérations SOC 24/7.</li>
+        <li>Accompagnement de 2 analystes N1 sur le SPL, la création de dashboards et la normalisation CIM.</li>
+        <li>Automatisation du déploiement des forwarders Splunk via Ansible/AWX sur les hôtes.</li>
+        <li>Pilotage des montées en versions majeures de Splunk Enterprise (9.4 → 10.2) sur l'ensemble du cluster en environnement de production, incluant la planification, les tests de non-régression et la mise à jour des apps.</li>
       </ul>
     </article>
 
@@ -114,10 +114,10 @@
         <span class="job-meta">Août 2023 — Sept. 2024</span>
       </div>
       <ul>
-        <li>Conçu 30+ règles de corrélation alignées MITRE ATT&amp;CK, réduisant le taux de faux positifs.</li>
-        <li>Traitement des alertes de sécurité par vacation dans un SOC Splunk ; pilotage de la réponse à incident sur plusieurs incidents avérés.</li>
-        <li>Création de dashboards et rapports pour les intégrations Trend Micro Deep Security et MISP, améliorant la visibilité sur les endpoints.</li>
-        <li>Contribution au mapping de couverture MITRE ATT&amp;CK ; identification des angles morts de détection.</li>
+        <li>Conception de 30+ règles de corrélation alignées MITRE ATT&amp;CK.</li>
+        <li>Traitement des alertes de sécurité et pilotage de la réponse à incident (sur plusieurs incidents avérés) dans un SOC Splunk.</li>
+        <li>Création de dashboards et rapports pour les intégrations Trend Micro Deep Security et MISP.</li>
+        <li>Contribution au mapping de couverture MITRE ATT&amp;CK et identification des angles morts de détection.</li>
       </ul>
     </article>
 
@@ -127,7 +127,7 @@
         <span class="job-meta">2022 · stage</span>
       </div>
       <ul>
-        <li>Développement full-stack d'une application web avec Laravel (PHP) et Tailwind CSS ; conception de l'interface, gestion des routes et des modèles MVC — base technique valorisée pour la conception de dashboards Splunk et l'automatisation.</li>
+        <li>Développement full-stack d'une application web avec Laravel (PHP) et Tailwind CSS ; conception de l'interface, gestion des routes et des modèles MVC.</li>
       </ul>
     </article>
   </section>
@@ -135,10 +135,10 @@
   <section>
     <h2>Certifications</h2>
     <div class="cert-list">
-      <div>✓ Splunk Core Certified Power User (SPLK-1002) — Splunk — 2026 (valide 3 ans)</div>
-      <div>✓ Trend Micro Deep Security 20 Essentials — Trend Micro — 2024</div>
-      <div>✓ Splunk Enterprise Certified Admin (SPLK-1003) — Splunk — 2026</div>
-      <div>⏳ Splunk Enterprise Certified Architect (SPLK-2002) — Splunk — planifié 2026</div>
+      <div>✓ <strong><em>Splunk Core Certified Power User (SPLK-1002)</em></strong> — Splunk — 2026 (valide 3 ans)</div>
+      <div>✓ <strong><em>Trend Micro Deep Security 20 Essentials</em></strong> — Trend Micro — 2024</div>
+      <div>✓ <strong><em>Splunk Enterprise Certified Admin (SPLK-1003)</em></strong> — Splunk — 2026</div>
+      <div>⏳ <strong><em>Splunk Enterprise Certified Architect (SPLK-2002)</em></strong> — Splunk — planifié 2026</div>
     </div>
   </section>
 
